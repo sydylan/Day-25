@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>Bookshelf API</header>
+    <section class="search">
+        <button class="home">Home</button>
+        <button><a href="about.html">About</a></button>
+        <button><a href="contact.html">Contact</a></button>
+        <input class="searchInput">
+        <button class="searchButton">Search</button>
+        <button class="sortButton">Sort by</button>
+        <div id="list-items">
+            <button class='sort1'>Sort by (A-Z) Title</button>
+            <button class='sort2'>Sort by (Z-A) Title</button>
+            <button class='sort3'>Sort by (A-Z) Author</button>
+            <button class='sort4'>Sort by (Z-A) Author</button>
+            <button class='sort5'>Sort by number of topics (low to high)</button>
+            <button class='sort6'>Sort by number of topics (high to low)</button>
+        </div>
+        <div class='userInputArea'>
+            <label>Title</label>
+            <input class="bookTitleInput">
+            <label>Author</label>
+            <input class="bookAuthorInput">
+            <label>Language</label>
+            <input class="bookLangInput">
+            <label>Subjects</label>
+            <input class="bookSubjInput">
+            <button class="addBookButton">Add book</button>
+
+        </div>
+    </section>
+
+
+    <div class="favCount">
+        <div class="favorites"></div>
+    </div>
+
+    <script src="book-data.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
