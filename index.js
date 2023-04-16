@@ -68,9 +68,11 @@ let bookRender = (book) => {
 
     commentSend.addEventListener("click", () => {
       let comment = commentInput.value;
-      book.comments = book.comments || [];
-      book.comments.push(comment);
-      wrapperRender();
+      if (comment.length <= 280) {
+        book.comments = book.comments || [];
+        book.comments.push(comment);
+        wrapperRender();
+      }
     });
   });
 

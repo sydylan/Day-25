@@ -43,8 +43,9 @@ a{
  }
  
  .userInputArea{
-    display: grid;
-    margin-right: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 45%;
     margin-left: 45%;    
     margin-top: 1%;
     margin-bottom: 1%;    
